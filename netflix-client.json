@@ -1,0 +1,44 @@
+{
+  "dns": {
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-netflix"
+          },
+          {
+             "wifi_ssid": "NextWiFi"
+          }
+        ],
+        "server": "smartdns"
+      }
+    ]
+  },
+  "route": {
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geosite-netflix",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-netflix"
+          },
+          {
+             "wifi_ssid": "NextWiFi"
+          }
+        ],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
