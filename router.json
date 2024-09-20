@@ -7,6 +7,14 @@
       }
     ]
   },
+   "inbounds": [
+    {
+      "type": "tun",
+      "exclude_uid": [
+        1000
+      ]
+    }
+  ],
   "route": {
     "rule_set": [
       {
