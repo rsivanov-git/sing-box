@@ -122,9 +122,6 @@
       "interface_name": "tun0",
       "stack": "system",
       "inet4_address": "172.19.0.1/30",
-      "exclude_uid": [
-        1000
-      ],
       "auto_route": true,
       "strict_route": false,
       "sniff": true
@@ -342,11 +339,6 @@
   "experimental": {
     "cache_file": {
       "enabled": true
-    },
-    "clash_api": {
-      "external_controller": "0.0.0.0:9090",
-      "external_ui": "dashboard",
-      "default_mode": "Rule"
     }
   }
 }
