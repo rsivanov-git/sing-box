@@ -10,6 +10,7 @@
    "inbounds": [
     {
       "type": "tun",
+      "interface_name": "tun0",
       "exclude_uid": [
         1000
       ]
