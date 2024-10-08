@@ -77,9 +77,6 @@
             "rule_set": "geosite-apple"
           },
           {
-            "rule_set": "geosite-discord"
-          },
-          {
             "rule_set": "geosite-telegram"
           },
           {
@@ -145,13 +142,6 @@
         "tag": "geosite-apple",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple.srs",
-        "download_detour": "proxy"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-discord",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-discord.srs",
         "download_detour": "proxy"
       },
       {
@@ -246,9 +236,6 @@
           },
           {
             "rule_set": "geosite-apple"
-          },
-          {
-            "rule_set": "geosite-discord"
           },
           {
             "rule_set": "geosite-telegram"
