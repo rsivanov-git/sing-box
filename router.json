@@ -12,7 +12,7 @@
       "type": "tun",
       "interface_name": "tun0",
       "stack": "system",
-      "inet4_address": "172.19.0.1/30",
+      "address": "172.19.0.1/30",
       "exclude_uid": [
         1000
       ],
