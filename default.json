@@ -96,6 +96,8 @@
               "mirror.gcr.io",
               "babbel.com",
               "busuu.com",
+              "duolingo.com",
+              "my.microsoftpersonalcontent.com",
               "izi.me",
               "iziyo.xyz"   
             ]
@@ -222,7 +224,9 @@
       {
         "domain_suffix": [
           "exler.ru",
-          "theins.ru"
+          "theins.ru",
+          "habr.ru",
+          "habr.com"
         ],
         "outbound": "proxy"
       },
@@ -276,6 +280,8 @@
               "mirror.gcr.io",
               "babbel.com",
               "busuu.com",
+              "duolingo.com",
+              "my.microsoftpersonalcontent.com",
               "izi.me",
               "iziyo.xyz"
             ]
