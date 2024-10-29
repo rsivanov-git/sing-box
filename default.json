@@ -46,6 +46,9 @@
             "rule_set": "geosite-yandex"
           },
           {
+            "rule_set": "geosite-vk"
+          },
+          {
             "domain_suffix": [
               ".ru",
               ".xn--p1ai",
@@ -136,6 +139,13 @@
         "tag": "geosite-yandex",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-yandex.srs",
+        "download_detour": "proxy"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-vk",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-vk.srs",
         "download_detour": "proxy"
       },
       {
@@ -236,6 +246,9 @@
         "rules": [
           {
             "rule_set": "geosite-yandex"
+          },
+          {
+            "rule_set": "geosite-vk"
           },
           {
             "rule_set": "geosite-apple"
