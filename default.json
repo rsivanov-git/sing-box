@@ -12,12 +12,12 @@
       },
       {
         "tag": "direct",
-        "address": "https://1.1.1.1/dns-query",
+        "address": "1.1.0.1",
         "detour": "direct"
       },
       {
         "tag": "russian",
-        "address": "https://77.88.8.8/dns-query",
+        "address": "77.88.8.8",
         "detour": "direct"
       },
       {
