@@ -12,7 +12,7 @@
       },
       {
         "tag": "direct",
-        "address": "1.0.0.1",
+        "address": "https://1.0.0.1/dns-query",
         "detour": "direct"
       },
       {
