@@ -236,7 +236,8 @@
           "exler.ru",
           "theins.ru",
           "habr.ru",
-          "habr.com"
+          "habr.com",
+          "apple-relay.apple.com"
         ],
         "outbound": "proxy"
       },
