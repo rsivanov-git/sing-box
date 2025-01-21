@@ -1,0 +1,26 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        ".ru",
+        ".xn--p1ai",
+        ".su",
+        "avito.st",
+        "licard.com",
+        "netmonet.co",
+        "yandex-bank.net",
+        "yango.com",
+        "taxitax.org",
+        "rostaxi.org",
+        "wishmaster.me",
+        "wylsa.com",
+        "sberbank.com",
+        "cr.yandex",
+        "yandexmetrica.com",
+        "yandexadexchange.net",
+        "ozonusercontent.com",
+        "quantum-a.io"
+      ]
+    }
+  ]
+}
