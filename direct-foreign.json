@@ -1,0 +1,19 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        ".kz",
+        ".by",
+        "vfsglobal.com",
+        "mirror.gcr.io",
+        "babbel.com",
+        "busuu.com",
+        "duolingo.com",
+        "my.microsoftpersonalcontent.com",
+        "izi.me",
+        "iziyo.xyz",
+        "coinbase.com"
+      ]
+    }
+  ]
+}
