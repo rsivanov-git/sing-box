@@ -1,0 +1,13 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        "exler.ru",
+        "theins.ru",
+        "habr.ru",
+        "habr.com",
+        "apple-relay.apple.com"
+      ]
+    }
+  ]
+}
