@@ -49,26 +49,7 @@
             "rule_set": "geosite-vk"
           },
           {
-            "domain_suffix": [
-              ".ru",
-              ".xn--p1ai",
-              ".su",
-              "avito.st",
-              "licard.com",
-              "netmonet.co",
-              "yandex-bank.net",
-              "yango.com",
-              "taxitax.org",
-              "rostaxi.org",
-              "wishmaster.me",
-              "wylsa.com",
-              "sberbank.com",
-              "cr.yandex",
-              "yandexmetrica.com",
-              "yandexadexchange.net",
-              "ozonusercontent.com",
-              "quantum-a.io"
-            ]
+            "rule_set": "direct-russian"
           }
         ],
         "server": "russian"
@@ -93,19 +74,7 @@
             "rule_set": "geosite-zoom"
           },
           {
-            "domain_suffix": [
-              ".kz",
-              ".by",
-              "vfsglobal.com",
-              "mirror.gcr.io",
-              "babbel.com",
-              "busuu.com",
-              "duolingo.com",
-              "my.microsoftpersonalcontent.com",
-              "izi.me",
-              "iziyo.xyz",
-              "coinbase.com"
-            ]
+            "rule_set": "direct-foreign"
           }
         ],
         "server": "direct"
@@ -136,6 +105,27 @@
   ],
   "route": {
     "rule_set": [
+      {
+        "type": "remote",
+        "tag": "direct-russian",
+        "format": "source",
+        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/main/direct-russian.json",
+        "download_detour": "proxy"
+      },
+      {
+        "type": "remote",
+        "tag": "direct-foreign",
+        "format": "source",
+        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/main/direct-foreign.json",
+        "download_detour": "proxy"
+      },
+      {
+        "type": "remote",
+        "tag": "proxied",
+        "format": "source",
+        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/main/proxied.json",
+        "download_detour": "proxy"
+      },
       {
         "type": "remote",
         "tag": "geosite-yandex",
@@ -234,13 +224,7 @@
         "outbound": "proxy"
       },
       {
-        "domain_suffix": [
-          "exler.ru",
-          "theins.ru",
-          "habr.ru",
-          "habr.com",
-          "apple-relay.apple.com"
-        ],
+        "rule_set": "proxied",
         "outbound": "proxy"
       },
       {
@@ -272,57 +256,11 @@
             "rule_set": "geoip-ru"
           },
           {
-            "domain_suffix": [
-              ".ru",
-              ".xn--p1ai",
-              ".su",
-              ".kz",
-              ".by",
-              "avito.st",
-              "licard.com",
-              "netmonet.co",
-              "yandex-bank.net",
-              "yango.com",
-              "taxitax.org",
-              "rostaxi.org",
-              "wishmaster.me",
-              "wylsa.com",
-              "sberbank.com",
-              "cr.yandex",
-              "yandexmetrica.com",
-              "yandexadexchange.net",
-              "ozonusercontent.com",
-              "quantum-a.io",
-              "vfsglobal.com",
-              "mirror.gcr.io",
-              "babbel.com",
-              "busuu.com",
-              "duolingo.com",
-              "my.microsoftpersonalcontent.com",
-              "izi.me",
-              "iziyo.xyz",
-              "coinbase.com"
-            ]
+            "rule_set": "direct-russian"
+          },
+          {
+            "rule_set": "direct-foreign"
           }
-        ],
-        "outbound": "direct"
-      },
-      {
-        "ip_cidr": [
-          "91.108.56.0/22",
-          "91.108.4.0/22",
-          "91.108.8.0/22",
-          "91.108.16.0/22",
-          "91.108.12.0/22",
-          "149.154.160.0/20",
-          "91.105.192.0/23",
-          "91.108.20.0/22",
-          "185.76.151.0/24",
-          "2001:b28:f23d::/48",
-          "2001:b28:f23f::/48",
-          "2001:67c:4e8::/48",
-          "2001:b28:f23c::/48",
-          "2a0a:f280::/32"
         ],
         "outbound": "direct"
       },
