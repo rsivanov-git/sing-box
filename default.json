@@ -17,7 +17,7 @@
       },
       {
         "tag": "russian",
-        "address": "https://77.88.8.8/dns-query",
+        "address": "https://1.0.0.1/dns-query",
         "detour": "direct"
       },
       {
