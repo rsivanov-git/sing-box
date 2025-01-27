@@ -34,10 +34,8 @@ jobs:
         sing-box rule-set compile direct-russian.json
         sing-box rule-set compile proxied.json
 
-    - name: Push compiled rules
-      run: |
-        git add direct-foreign.srs
-        git add direct-russian.srs
-        git add proxied.srs
-        git commit -m "Update compiled rules from main branch"
-        git push origin rule-set
+    - name: Push changes
+      uses: zyrouge/github-push-action@v1.0.12
+      with:
+        github-token: ${{ secrets.GIT_TOKEN }}
+        branch: rule-set
