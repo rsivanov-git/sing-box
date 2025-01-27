@@ -108,22 +108,22 @@
       {
         "type": "remote",
         "tag": "direct-russian",
-        "format": "source",
-        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/main/direct-russian.json",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/rule-set/direct-russian.srs",
         "download_detour": "proxy"
       },
       {
         "type": "remote",
         "tag": "direct-foreign",
-        "format": "source",
-        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/main/direct-foreign.json",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/rule-set/direct-foreign.srs",
         "download_detour": "proxy"
       },
       {
         "type": "remote",
         "tag": "proxied",
-        "format": "source",
-        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/main/proxied.json",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/rule-set/proxied.srs",
         "download_detour": "proxy"
       },
       {
