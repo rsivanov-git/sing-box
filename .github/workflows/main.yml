@@ -1,0 +1,43 @@
+name: Compile rules
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  compile_rules:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout private repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Configure git
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Switch to rule-set branch
+      run: |
+        git checkout rule-set || git checkout -b rule-set
+
+    - name: Merge main into rule-set
+      run: git merge main --no-edit
+
+    - name: Compile
+      run: |
+        # Replace with your actual merge commands
+        bash <(curl -fsSL https://sing-box.app/deb-install.sh)
+        sing-box rule-set compile direct-foreign.json
+        sing-box rule-set compile direct-russian.json
+        sing-box rule-set compile proxied.json
+
+    - name: Push compiled rules
+      run: |
+        git add direct-foreign.srs
+        git add direct-russian.srs
+        git add proxied.srs
+        git commit -m "Update compiled rules from main branch"
+        git push origin rule-set
