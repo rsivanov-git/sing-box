@@ -17,7 +17,7 @@
       },
       {
         "tag": "russian",
-        "address": "https://1.0.0.1/dns-query",
+        "address": "https://1.1.1.1/dns-query",
         "detour": "direct"
       },
       {
@@ -49,7 +49,26 @@
             "rule_set": "geosite-vk"
           },
           {
-            "rule_set": "direct-russian"
+            "domain_suffix": [
+              ".ru",
+              ".xn--p1ai",
+              ".su",
+              "avito.st",
+              "licard.com",
+              "netmonet.co",
+              "yandex-bank.net",
+              "yango.com",
+              "taxitax.org",
+              "rostaxi.org",
+              "wishmaster.me",
+              "wylsa.com",
+              "sberbank.com",
+              "cr.yandex",
+              "yandexmetrica.com",
+              "yandexadexchange.net",
+              "ozonusercontent.com",
+              "quantum-a.io"
+            ]
           }
         ],
         "server": "russian"
@@ -74,7 +93,19 @@
             "rule_set": "geosite-zoom"
           },
           {
-            "rule_set": "direct-foreign"
+            "domain_suffix": [
+              ".kz",
+              ".by",
+              "vfsglobal.com",
+              "mirror.gcr.io",
+              "babbel.com",
+              "busuu.com",
+              "duolingo.com",
+              "my.microsoftpersonalcontent.com",
+              "izi.me",
+              "iziyo.xyz",
+              "coinbase.com"
+            ]
           }
         ],
         "server": "direct"
@@ -105,27 +136,6 @@
   ],
   "route": {
     "rule_set": [
-      {
-        "type": "remote",
-        "tag": "direct-russian",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/rule-set/direct-russian.srs",
-        "download_detour": "proxy"
-      },
-      {
-        "type": "remote",
-        "tag": "direct-foreign",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/rule-set/direct-foreign.srs",
-        "download_detour": "proxy"
-      },
-      {
-        "type": "remote",
-        "tag": "proxied",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/rsivanov-git/sing-box/rule-set/proxied.srs",
-        "download_detour": "proxy"
-      },
       {
         "type": "remote",
         "tag": "geosite-yandex",
@@ -224,7 +234,13 @@
         "outbound": "proxy"
       },
       {
-        "rule_set": "proxied",
+        "domain_suffix": [
+          "exler.ru",
+          "theins.ru",
+          "habr.ru",
+          "habr.com",
+          "apple-relay.apple.com"
+        ],
         "outbound": "proxy"
       },
       {
@@ -256,29 +272,57 @@
             "rule_set": "geoip-ru"
           },
           {
-            "rule_set": "direct-russian"
-          },
-          {
-            "rule_set": "direct-foreign"
-          },
-          {
-            "ip_cidr": [
-              "91.108.56.0/22",
-              "91.108.4.0/22",
-              "91.108.8.0/22",
-              "91.108.16.0/22",
-              "91.108.12.0/22",
-              "149.154.160.0/20",
-              "91.105.192.0/23",
-              "91.108.20.0/22",
-              "185.76.151.0/24",
-              "2001:b28:f23d::/48",
-              "2001:b28:f23f::/48",
-              "2001:67c:4e8::/48",
-              "2001:b28:f23c::/48",
-              "2a0a:f280::/32"
+            "domain_suffix": [
+              ".ru",
+              ".xn--p1ai",
+              ".su",
+              ".kz",
+              ".by",
+              "avito.st",
+              "licard.com",
+              "netmonet.co",
+              "yandex-bank.net",
+              "yango.com",
+              "taxitax.org",
+              "rostaxi.org",
+              "wishmaster.me",
+              "wylsa.com",
+              "sberbank.com",
+              "cr.yandex",
+              "yandexmetrica.com",
+              "yandexadexchange.net",
+              "ozonusercontent.com",
+              "quantum-a.io",
+              "vfsglobal.com",
+              "mirror.gcr.io",
+              "babbel.com",
+              "busuu.com",
+              "duolingo.com",
+              "my.microsoftpersonalcontent.com",
+              "izi.me",
+              "iziyo.xyz",
+              "coinbase.com"
             ]
           }
+        ],
+        "outbound": "direct"
+      },
+      {
+        "ip_cidr": [
+          "91.108.56.0/22",
+          "91.108.4.0/22",
+          "91.108.8.0/22",
+          "91.108.16.0/22",
+          "91.108.12.0/22",
+          "149.154.160.0/20",
+          "91.105.192.0/23",
+          "91.108.20.0/22",
+          "185.76.151.0/24",
+          "2001:b28:f23d::/48",
+          "2001:b28:f23f::/48",
+          "2001:67c:4e8::/48",
+          "2001:b28:f23c::/48",
+          "2a0a:f280::/32"
         ],
         "outbound": "direct"
       },
