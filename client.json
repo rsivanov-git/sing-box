@@ -23,8 +23,7 @@
       "stack": "system",
       "address": "172.19.0.1/30",
       "auto_route": true,
-      "strict_route": true,
-      "sniff": true
+      "strict_route": true
     }
   ],
   "route": {
@@ -37,6 +36,10 @@
       }
     ],
     "rules": [
+      {
+        "inbound": "in",
+        "action": "sniff"
+      },
       {
         "type": "logical",
         "mode": "and",
