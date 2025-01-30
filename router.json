@@ -17,8 +17,7 @@
         1000
       ],
       "auto_route": true,
-      "strict_route": false,
-      "sniff": true
+      "strict_route": false
     }
   ],
   "route": {
@@ -31,6 +30,10 @@
       }
     ],
     "rules": [
+      {
+        "inbound": "in",
+        "action": "sniff"
+      },
       {
         "rule_set": "geosite-netflix",
         "outbound": "direct"
