@@ -7,14 +7,17 @@
   "dns": {
     "servers": [
       {
-        "tag": "system",
-        "address": "local",
+        "tag": "proxy",
+        "address": "https://1.1.1.1/dns-query"
+      },
+      {
+        "tag": "direct",
+        "address": "https://1.1.1.1/dns-query",
         "detour": "direct"
       },
       {
-        "tag": "cloudflare",
-        "address": "https://cloudflare-dns.com/dns-query",
-        "address_resolver": "system",
+        "tag": "russian",
+        "address": "https://1.1.1.1/dns-query",
         "detour": "direct"
       },
       {
@@ -22,7 +25,94 @@
         "address": "rcode://refused"
       }
     ],
-    "final": "cloudflare",
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "direct"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "proxy"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "rule_set": "geosite-yandex"
+          },
+          {
+            "rule_set": "geosite-vk"
+          },
+          {
+            "domain_suffix": [
+              ".ru",
+              ".xn--p1ai",
+              ".su",
+              "avito.st",
+              "licard.com",
+              "netmonet.co",
+              "yandex-bank.net",
+              "yango.com",
+              "taxitax.org",
+              "rostaxi.org",
+              "wishmaster.me",
+              "wylsa.com",
+              "sberbank.com",
+              "cr.yandex",
+              "yandexmetrica.com",
+              "yandexadexchange.net",
+              "ozonusercontent.com",
+              "quantum-a.io"
+            ]
+          }
+        ],
+        "server": "russian"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "rule_set": "geosite-apple"
+          },
+          {
+            "rule_set": "geosite-telegram"
+          },
+          {
+            "rule_set": "geosite-twitch"
+          },
+          {
+            "rule_set": "geosite-whatsapp"
+          },
+          {
+            "rule_set": "geosite-zoom"
+          },
+          {
+            "domain_suffix": [
+              ".kz",
+              "deepseek.com",
+              "volces.com",
+              "vfsglobal.com",
+              "mirror.gcr.io",
+              "babbel.com",
+              "busuu.com",
+              "duolingo.com",
+              "my.microsoftpersonalcontent.com",
+              "izi.me",
+              "iziyo.xyz",
+              "coinbase.com"
+            ]
+          }
+        ],
+        "server": "direct"
+      }
+    ],
+    "final": "proxy",
     "strategy": "ipv4_only",
     "reverse_mapping": true,
     "disable_cache": false,
