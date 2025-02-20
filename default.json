@@ -7,8 +7,14 @@
   "dns": {
     "servers": [
       {
+        "tag": "system",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
         "tag": "cloudflare",
         "address": "https://cloudflare-dns.com/dns-query",
+        "address_resolver": "system",
         "detour": "direct"
       },
       {
