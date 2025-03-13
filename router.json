@@ -1,12 +1,4 @@
 {
-  "dns": {
-    "rules": [
-      {
-        "rule_set": "geosite-netflix",
-        "server": "smartdns"
-      }
-    ]
-  },
   "inbounds": [
     {
       "type": "tun",
@@ -21,22 +13,10 @@
     }
   ],
   "route": {
-    "rule_set": [
-      {
-        "type": "remote",
-        "tag": "geosite-netflix",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs"
-      }
-    ],
     "rules": [
       {
         "inbound": "in",
         "action": "sniff"
-      },
-      {
-        "rule_set": "geosite-netflix",
-        "outbound": "direct"
       }
     ]
   },
