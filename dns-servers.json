@@ -1,0 +1,24 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "proxy",
+        "address": "https://1.1.1.1/dns-query"
+      },
+      {
+        "tag": "direct",
+        "address": "https://1.1.1.1/dns-query",
+        "detour": "direct"
+      },
+      {
+        "tag": "russian",
+        "address": "https://1.1.1.1/dns-query",
+        "detour": "direct"
+      },
+      {
+        "tag": "block",
+        "address": "rcode://refused"
+      }
+    ]
+  }
+}
