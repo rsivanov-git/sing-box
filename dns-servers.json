@@ -3,16 +3,16 @@
     "servers": [
       {
         "tag": "proxy",
-        "address": "https://1.1.1.1/dns-query"
+        "address": "https://dns.nextdns.io"
       },
       {
         "tag": "direct",
-        "address": "https://1.1.1.1/dns-query",
+        "address": "https://dns.nextdns.io",
         "detour": "direct"
       },
       {
         "tag": "russian",
-        "address": "https://1.1.1.1/dns-query",
+        "address": "https://dns.nextdns.io",
         "detour": "direct"
       },
       {
