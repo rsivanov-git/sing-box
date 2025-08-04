@@ -17,15 +17,6 @@
         "type": "https",
         "server": "dns.nextdns.io",
         "detour": "direct"
-      },
-      {
-        "tag": "block",
-        "type": "predefined",
-        "responses": [
-          {
-            "rcode": "REFUSED"
-          }
-        ]
       }
     ]
   }
