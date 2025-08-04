@@ -8,15 +8,13 @@
     "rules": [
       {
         "clash_mode": "Direct",
-        "action": {
-          "server": "direct"
-        }
+        "action": "route",
+        "server": "direct"
       },
       {
         "clash_mode": "Global",    
-        "action": {
-          "server": "proxy"
-        }
+        "action": "route",
+        "server": "proxy"
       },
       {
         "type": "logical",
@@ -52,9 +50,8 @@
             ]
           }
         ],
-        "action": {
-          "server": "russian"
-        }
+        "action": "route",
+        "server": "russian"
       },
       {
         "type": "logical",
@@ -83,9 +80,8 @@
             ]
           }
         ],
-        "action": {
-          "server": "direct"
-        }
+        "action": "route",
+        "server": "direct"
       }
     ],
     "final": "proxy",
