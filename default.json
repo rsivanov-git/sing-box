@@ -9,14 +9,12 @@
       {
         "clash_mode": "Direct",
         "action": {
-          "action": "route",
           "server": "direct"
         }
       },
       {
         "clash_mode": "Global",    
         "action": {
-          "action": "route",
           "server": "proxy"
         }
       },
@@ -55,7 +53,6 @@
           }
         ],
         "action": {
-          "action": "route",
           "server": "russian"
         }
       },
@@ -87,7 +84,6 @@
           }
         ],
         "action": {
-          "action": "route",
           "server": "direct"
         }
       }
