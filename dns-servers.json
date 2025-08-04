@@ -3,21 +3,29 @@
     "servers": [
       {
         "tag": "proxy",
-        "address": "https://dns.nextdns.io"
+        "type": "https",
+        "server": "dns.nextdns.io"
       },
       {
         "tag": "direct",
-        "address": "https://dns.nextdns.io",
+        "type": "https",
+        "server": "dns.nextdns.io",
         "detour": "direct"
       },
       {
         "tag": "russian",
-        "address": "https://dns.nextdns.io",
+        "type": "https",
+        "server": "dns.nextdns.io",
         "detour": "direct"
       },
       {
         "tag": "block",
-        "address": "rcode://refused"
+        "type": "predefined",
+        "responses": [
+          {
+            "rcode": "REFUSED"
+          }
+        ]
       }
     ]
   }
