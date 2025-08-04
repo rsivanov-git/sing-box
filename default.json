@@ -101,7 +101,7 @@
   ],
   "route": {
     "default_domain_resolver": {
-      "server": "local"
+      "server": "proxy"
     },
     "rule_set": [
       {
