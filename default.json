@@ -10,7 +10,7 @@
         "clash_mode": "Direct",
         "action": {
           "action": "route",
-          "server": "local"
+          "server": "direct"
         }
       },
       {
@@ -88,7 +88,7 @@
         ],
         "action": {
           "action": "route",
-          "server": "local"
+          "server": "direct"
         }
       }
     ],
