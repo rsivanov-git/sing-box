@@ -4,19 +4,18 @@
       {
         "tag": "proxy",
         "type": "https",
-        "server": "dns.nextdns.io"
+        "server": "dns.nextdns.io",
+        "detour": "proxy"
       },
       {
         "tag": "direct",
         "type": "https",
-        "server": "dns.nextdns.io",
-        "detour": "direct"
+        "server": "dns.nextdns.io"
       },
       {
         "tag": "russian",
         "type": "https",
-        "server": "dns.nextdns.io",
-        "detour": "direct"
+        "server": "dns.nextdns.io"
       }
     ]
   }
