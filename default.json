@@ -7,16 +7,18 @@
   "dns": {
     "rules": [
       {
-        "outbound": "any",
-        "server": "direct"
-      },
-      {
         "clash_mode": "Direct",
-        "server": "direct"
+        "action": {
+          "action": "route",
+          "server": "local"
+        }
       },
       {
-        "clash_mode": "Global",
-        "server": "proxy"
+        "clash_mode": "Global",    
+        "action": {
+          "action": "route",
+          "server": "proxy"
+        }
       },
       {
         "type": "logical",
@@ -52,7 +54,10 @@
             ]
           }
         ],
-        "server": "russian"
+        "action": {
+          "action": "route",
+          "server": "russian"
+        }
       },
       {
         "type": "logical",
@@ -65,24 +70,14 @@
             "rule_set": "geosite-telegram"
           },
           {
-            "rule_set": "geosite-twitch"
-          },
-          {
             "rule_set": "geosite-whatsapp"
-          },
-          {
-            "rule_set": "geosite-zoom"
           },
           {
             "domain_suffix": [
               ".kz",
               "cdntogo.net",
-              "deepseek.com",
-              "volces.com",
               "vfsglobal.com",
               "mirror.gcr.io",
-              "babbel.com",
-              "busuu.com",
               "duolingo.com",
               "my.microsoftpersonalcontent.com",
               "izi.me",
@@ -91,7 +86,10 @@
             ]
           }
         ],
-        "server": "direct"
+        "action": {
+          "action": "route",
+          "server": "local"
+        }
       }
     ],
     "final": "proxy",
@@ -110,6 +108,9 @@
     }
   ],
   "route": {
+    "default_domain_resolver": {
+      "server": "local"
+    },
     "rule_set": [
       {
         "type": "remote",
@@ -137,21 +138,9 @@
       },
       {
         "type": "remote",
-        "tag": "geosite-twitch",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-twitch.srs"
-      },
-      {
-        "type": "remote",
         "tag": "geosite-whatsapp",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-whatsapp.srs"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-zoom",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-zoom.srs"
       },
       {
         "type": "remote",
@@ -227,13 +216,7 @@
             "rule_set": "geosite-telegram"
           },
           {
-            "rule_set": "geosite-twitch"
-          },
-          {
             "rule_set": "geosite-whatsapp"
-          },
-          {
-            "rule_set": "geosite-zoom"
           },
           {
             "rule_set": "geoip-ru"
@@ -261,12 +244,8 @@
               "yandexadexchange.net",
               "ozonusercontent.com",
               "quantum-a.io",
-              "deepseek.com",
-              "volces.com",
               "vfsglobal.com",
               "mirror.gcr.io",
-              "babbel.com",
-              "busuu.com",
               "duolingo.com",
               "my.microsoftpersonalcontent.com",
               "izi.me",
