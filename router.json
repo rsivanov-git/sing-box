@@ -10,11 +10,6 @@
       ],
       "auto_route": true,
       "strict_route": false
-    },
-    {
-      "type": "http",
-      "listen": "127.0.0.1",
-      "listen_port": 7890
     }
   ],
   "route": {
