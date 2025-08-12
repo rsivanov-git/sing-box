@@ -6,6 +6,7 @@
       "stack": "system",
       "address": "172.19.0.1/30",
       "exclude_uid": [
+        0,
         1000
       ],
       "auto_route": true,
