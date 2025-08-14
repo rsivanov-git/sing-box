@@ -12,7 +12,7 @@
   "route": {
     "rules": [
       {
-        "inbound": "in",
+        "inbound": "tun",
         "action": "sniff"
       }
     ]
