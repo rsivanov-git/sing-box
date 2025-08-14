@@ -2,6 +2,7 @@
   "inbounds": [
     {
       "type": "tun",
+      "tag": "tun",
       "interface_name": "tun0",
       "stack": "system",
       "address": "172.19.0.1/30",
