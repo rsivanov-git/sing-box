@@ -2,19 +2,32 @@
   "dns": {
     "servers": [
       {
-        "tag": "proxy",
-        "type": "https",
-        "server": "dns.nextdns.io",
-        "detour": "proxy"
+        "type": "local",
+        "tag": "local"
       },
       {
-        "tag": "direct",
         "type": "https",
+        "tag": "cloudflare",
+        "detour": "proxy",
+        "server": "1.1.1.1"
+      },
+      {
+        "type": "https",
+        "tag": "proxy",
+        "detour": "proxy",
+        "domain_resolver": "cloudflare",
         "server": "dns.nextdns.io"
       },
       {
-        "tag": "russian",
         "type": "https",
+        "tag": "direct",
+        "domain_resolver": "local",
+        "server": "dns.nextdns.io"
+      },
+      {
+        "type": "https",
+        "tag": "russian",
+        "domain_resolver": "local",
         "server": "dns.nextdns.io"
       }
     ]
