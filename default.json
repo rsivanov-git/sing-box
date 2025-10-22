@@ -61,12 +61,6 @@
             "rule_set": "geosite-apple"
           },
           {
-            "rule_set": "geosite-telegram"
-          },
-          {
-            "rule_set": "geosite-whatsapp"
-          },
-          {
             "domain_suffix": [
               ".kz",
               "cdntogo.net",
@@ -127,20 +121,6 @@
       },
       {
         "type": "remote",
-        "tag": "geosite-telegram",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-telegram.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-whatsapp",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-whatsapp.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
         "tag": "geoip-ru",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ru.srs",
@@ -197,22 +177,6 @@
         "outbound": "proxy"
       },
       {
-        "port": [
-          3478,
-          3480,
-          3484,
-          5222,
-          1400
-        ],
-        "outbound": "proxy"
-      },
-      {
-        "port_range": [
-          "596:599"
-        ],
-        "outbound": "proxy"
-      },
-      {
         "type": "logical",
         "mode": "or",
         "rules": [
@@ -224,12 +188,6 @@
           },
           {
             "rule_set": "geosite-apple"
-          },
-          {
-            "rule_set": "geosite-telegram"
-          },
-          {
-            "rule_set": "geosite-whatsapp"
           },
           {
             "rule_set": "geoip-ru"
