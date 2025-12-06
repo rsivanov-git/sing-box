@@ -7,15 +7,9 @@
       },
       {
         "type": "https",
-        "tag": "cloudflare",
-        "detour": "proxy",
-        "server": "1.1.1.1"
-      },
-      {
-        "type": "https",
         "tag": "proxy",
         "detour": "proxy",
-        "domain_resolver": "cloudflare",
+        "domain_resolver": "local",
         "server": "dns.nextdns.io"
       },
       {
