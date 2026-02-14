@@ -7,7 +7,13 @@
         "theins.ru",
         "habr.ru",
         "habr.com",
-        "apple-relay.apple.com"
+        "apple-relay.apple.com",
+        "weatherkit.apple.com",
+        "apple-relay.akamaized.net",
+        "apple-relay.apple.com",
+        "apple-relay.cloudflare.com",
+        "apple-relay.fastly-edge.com",
+        "apple-relay.mask.apple-dns.net"
       ]
     }
   ]
