@@ -3,15 +3,13 @@
   "rules": [
     {
       "domain_suffix": [
-        ".kz",
         "cdntogo.net",
         "vfsglobal.com",
         "mirror.gcr.io",
         "duolingo.com",
         "my.microsoftpersonalcontent.com",
         "izi.me",
-        "iziyo.xyz",
-        "coinbase.com"
+        "iziyo.xyz"
       ]
     }
   ]
