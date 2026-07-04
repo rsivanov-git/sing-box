@@ -21,32 +21,14 @@
         "mode": "or",
         "rules": [
           {
-            "rule_set": "geosite-yandex"
-          },
-          {
-            "rule_set": "geosite-vk"
-          },
+            "rule_set": "geosite-ru"
+          }
           {
             "domain_suffix": [
-              ".ru",
-              ".xn--p1ai",
-              ".su",
-              "emias.info",
-              "avito.st",
               "licard.com",
               "tricolor.tv",
-              "netmonet.co",
-              "yandex-bank.net",
-              "yango.com",
-              "taxitax.org",
-              "rostaxi.org",
               "wishmaster.me",
               "wylsa.com",
-              "sberbank.com",
-              "cr.yandex",
-              "yandexmetrica.com",
-              "yandexadexchange.net",
-              "ozonusercontent.com",
               "quantum-a.io"
             ]
           }
@@ -63,7 +45,6 @@
           },
           {
             "domain_suffix": [
-              ".kz",
               "cdntogo.net",
               "vfsglobal.com",
               "mirror.gcr.io",
@@ -100,23 +81,16 @@
     "rule_set": [
       {
         "type": "remote",
-        "tag": "geosite-yandex",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-yandex.srs",
-        "download_detour": "proxy"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-vk",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-vk.srs",
-        "download_detour": "proxy"
-      },
-      {
-        "type": "remote",
         "tag": "geosite-apple",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple.srs",
+        "download_detour": "proxy"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-ru",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ru.srs",
         "download_detour": "proxy"
       },
       {
@@ -181,40 +155,18 @@
         "mode": "or",
         "rules": [
           {
-            "rule_set": "geosite-yandex"
-          },
-          {
-            "rule_set": "geosite-vk"
-          },
-          {
-            "rule_set": "geosite-apple"
+            "rule_set": "geosite-ru"
           },
           {
             "rule_set": "geoip-ru"
           },
           {
             "domain_suffix": [
-              ".ru",
-              ".xn--p1ai",
-              ".su",
-              ".kz",
               "cdntogo.net",
-              "emias.info",
-              "avito.st",
               "licard.com",
               "tricolor.tv",
-              "netmonet.co",
-              "yandex-bank.net",
-              "yango.com",
-              "taxitax.org",
-              "rostaxi.org",
               "wishmaster.me",
               "wylsa.com",
-              "sberbank.com",
-              "cr.yandex",
-              "yandexmetrica.com",
-              "yandexadexchange.net",
-              "ozonusercontent.com",
               "quantum-a.io",
               "vfsglobal.com",
               "mirror.gcr.io",
