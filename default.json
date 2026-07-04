@@ -22,7 +22,7 @@
         "rules": [
           {
             "rule_set": "geosite-ru"
-          }
+          },
           {
             "domain_suffix": [
               "licard.com",
